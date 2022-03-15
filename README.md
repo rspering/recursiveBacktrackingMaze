@@ -1,4 +1,3 @@
-
 Programming assignment 3 (PA03)
 ==============================
 
