@@ -1,0 +1,11 @@
+Username (not for points): mwcxp5
+at_end_test.cpp: pass
+build_matrix_test.cpp: Probably crashed
+fill_matrix_test.cpp: fail
+find_exit_test.cpp: fail
+find_start_test.cpp: fail
+Username accurate (0 good, 1 bad): list index out of range
+Bytes definitely lost (memory leak) (0 is perfect): 0
+Main output diff size (0 is perfect): 8771
+Runtime across many runs (lower better): 0.002645209915935993
+Print test (0 is good): 557
