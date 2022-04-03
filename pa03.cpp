@@ -10,6 +10,7 @@
 int main()
 {
     int numRows, rowPos, colPos;
+    int short numMazes = 0;
     string* maze;
     cin >> numRows;
     while (numRows > 0)
@@ -21,11 +22,19 @@ int main()
 
         find_start(maze, numRows, rowPos, colPos);
         
-        find_exit(maze, rowPos, colPos);
+        if (find_exit(maze, rowPos, colPos))
+        {
+            cout << "Map " << numMazes << " -- Solution found:" << endl;
+        }
+        else
+        {
+            cout << "Map " << numMazes << " -- No solution found:" << endl;
+        }
         print_matrix(maze, numRows);
+        cout << endl;
 
         delete_matrix(maze);
-        
+        numMazes++;
         cin >> numRows;
     } 
     
