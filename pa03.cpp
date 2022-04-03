@@ -9,6 +9,26 @@
 
 int main()
 {
+    int numRows, rowPos, colPos;
+    string* maze;
+    cin >> numRows;
+    while (numRows > 0)
+    {
+        maze = build_matrix(numRows);
+        
+        cin.ignore();
+        fill_matrix(maze, numRows);
+
+        find_start(maze, numRows, rowPos, colPos);
+        
+        find_exit(maze, rowPos, colPos);
+        print_matrix(maze, numRows);
+
+        delete_matrix(maze);
+        
+        cin >> numRows;
+    } 
+    
 
     return 0;
 }
